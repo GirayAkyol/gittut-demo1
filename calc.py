@@ -15,7 +15,7 @@ def main():
     else:
         print("Unsupported operator.")
         return
-
+        
     print(result)
 
 if __name__ == "__main__":
