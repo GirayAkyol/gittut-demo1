@@ -16,9 +16,15 @@ def main():
     elif '-' in expression:
         num1, num2 = expression.split('-')
         result = float(num1) - float(num2)
+    elif '*' in expression:
+        num1, num2 = expression.split('*')
+        result = float(num1) * float(num2)
     elif '/' in expression:
         num1, num2 = expression.split('/')
-        result = float(num1) / float(num2)
+        if float(num2) == 0:
+            result= 0.0
+        else:
+            result = float(num1) / float(num2)
     else:
         print("Unsupported operator. Use +, -, *, or /.")
         return
