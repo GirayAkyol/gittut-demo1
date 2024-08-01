@@ -10,6 +10,7 @@ def main():
     expression = ''.join(sys.argv[1:]).replace(" ", "")
 
     if '+' in expression:
+        # addition
         num1, num2 = expression.split('+')
         result = float(num1) + float(num2)
     elif '-' in expression:
@@ -27,7 +28,7 @@ def main():
     else:
         print("Unsupported operator. Use +, -, *, or /.")
         return
-
+        
     print(result)
 
 if __name__ == "__main__":
