@@ -10,15 +10,12 @@ def main():
     expression = ''.join(sys.argv[1:]).replace(" ", "")
 
     if '+' in expression:
+        # addition
         num1, num2 = expression.split('+')
         result = float(num1) + float(num2)
-<<<<<<< HEAD
     elif '-' in expression:
         num1, num2 = expression.split('-')
         result = float(num1) - float(num2)
-    else:
-        print("Unsupported operator. Use +, -, *, or /.")
-=======
     elif '*' in expression:
         num1, num2 = expression.split('*')
         result = float(num1) * float(num2)
@@ -30,7 +27,6 @@ def main():
         result = float(num1) / float(num2)
     else:
         print("Unsupported operator. Use +, -, *, or /.")
-        return
 
     print(result)
 
