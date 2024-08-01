@@ -12,11 +12,19 @@ def main():
     if '+' in expression:
         num1, num2 = expression.split('+')
         result = float(num1) + float(num2)
+<<<<<<< HEAD
     elif '-' in expression:
         num1, num2 = expression.split('-')
         result = float(num1) - float(num2)
     else:
         print("Unsupported operator. Use +, -, *, or /.")
+=======
+    elif '*' in expression:
+        num1, num2 = expression.split('*')
+        result = float(num1) * float(num2)
+    else:
+        print("Unsupported operator. Use +, -, *")
+>>>>>>> a2f3a1e (added mul)
         return
 
     print(result)
